@@ -1,13 +1,22 @@
-
-import React from "react";
-import './../styles/App.css';
+import React, { useState } from "react";
+import "./../styles/App.css";
 
 const App = () => {
+  const [intfield, setintfield] = useState("");
+  const change = (event) => {
+    setintfield(event.target.value);
+  };
   return (
     <div>
-        {/* Do not remove the main div */}
+      {
+        <>
+          <h6>Enter your Name</h6>
+          <input onChange={change} />
+          <p>{intfield}</p>
+        </>
+      }
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

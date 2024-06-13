@@ -10,9 +10,9 @@ const App = () => {
     <div>
       {
         <>
-          <h6>Enter your Name</h6>
+          <h6>Enter your Name:</h6>
           <input onChange={change} />
-          <p>{`Hello${intfield}`}</p>
+          <p>{`Hello ${intfield}`}</p>
         </>
       }
     </div>

@@ -12,7 +12,7 @@ const App = () => {
         <>
           <h6>Enter your Name</h6>
           <input onChange={change} />
-          <p>{intfield}</p>
+          <p>{`Hello${intfield}`}</p>
         </>
       }
     </div>
